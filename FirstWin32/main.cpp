@@ -26,7 +26,7 @@ int height(1080); // h window
 int width(1920); // w window
 bool modeScreen(false); // mode screen(true - ful screen, false - windowed mode)
 
-// constants
+// constants windows message
 #define WM_RENDER WM_USER + 1001
 
 // functions
@@ -262,7 +262,7 @@ bool resizeWindow(SIZE p)
 
 void renderEditor()
 {
-	float color[] = { 0.36f, 0.36f, 0.36f, 1.0f }; // структуры color больше нет
+	float color[] = { 0.36f, 0.36f, 0.36f, 1.0f }; 
 	deviceContext->ClearDepthStencilView(DepthStancilBuffer, D3D11_CLEAR_DEPTH, 1.0f, 0);
 	deviceContext->ClearRenderTargetView(backBuffer, color);
 
